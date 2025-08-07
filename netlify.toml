@@ -1,6 +1,6 @@
 [build]
   publish = "dist/woodhome-preschool/browser"
-  command = "ng build --prod"
+  command = "npm run build"
 
 [[redirects]]
   from = "/*"
