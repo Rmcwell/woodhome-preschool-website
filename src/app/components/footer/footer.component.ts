@@ -2,11 +2,11 @@ import { Component  } from '@angular/core';
 import { LucideIconsModule } from '../../lucide.module';
 
 @Component({
-  selector: 'app-footer',
+  selector: 'app-footer-base',
   standalone: true,
   imports: [LucideIconsModule],
-  templateUrl: './footer.html',
-  styleUrls: ['./footer.css']
+  templateUrl: './footer.component.html',
+  styleUrls: ['./footer.component.css']
 })
 
 export class FooterComponent {

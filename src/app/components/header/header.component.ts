@@ -1,12 +1,15 @@
 import { Component } from '@angular/core';
 import { LucideIconsModule } from '../../lucide.module';
+import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-header',
+  selector: 'app-header-base',
   standalone: true,
-  imports: [LucideIconsModule],
-  templateUrl: './header.html',
-  styleUrls: ['./header.css']
+  imports: [
+    LucideIconsModule,
+    RouterModule],
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
     websiteLogo: string = 'assets/images/websiteLogo.webp';

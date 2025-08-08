@@ -75,6 +75,7 @@
 
 .nav-link:hover {
   color: #2563eb;
+  cursor: pointer;
 }
 
 .nav-icon {

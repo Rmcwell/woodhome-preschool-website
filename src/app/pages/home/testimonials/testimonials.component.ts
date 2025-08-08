@@ -3,13 +3,13 @@ import { CommonModule } from '@angular/common';
 import { LucideIconsModule } from '../../../lucide.module';
 
 @Component({
-  selector: 'app-testimonials',
+  selector: 'app-testimonials-home',
   standalone: true,
   imports: [CommonModule, LucideIconsModule],
-  templateUrl: './testimonials.html',
-  styleUrls: ['./testimonials.css']
+  templateUrl: './testimonials.component.html',
+  styleUrls: ['./testimonials.component.css']
 })
-export class TestimonialsComponent {
+export class HomeTestimonialsComponent {
     stars = Array(5);
 
   testimonials = [

@@ -1,15 +1,19 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LucideIconsModule } from '../../../lucide.module';
+import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-programs',
+  selector: 'app-programs-home',
   standalone: true,
-  imports: [CommonModule, LucideIconsModule],
-  templateUrl: './programs.html',
-  styleUrls: ['./programs.css']
+  imports: [
+    CommonModule, 
+    LucideIconsModule,
+    RouterModule],
+  templateUrl: './programs.component.html',
+  styleUrls: ['./programs.component.css']
 })
-export class ProgramsComponent {
+export class HomeProgramsComponent {
     programs = [
     {
       title: 'Morning Program',
@@ -43,7 +47,7 @@ export class ProgramsComponent {
       iconBg: '#dcfce7',
       iconLetter: 'B',
       iconColor: '#065f46',
-      description: 'Preparing children for kindergarten with focus on literacy, math concepts, science, and advanced social skills.',
+      description: 'Supportive care that extends the day with enriching activities, social development, and a smooth transition between home and school.',
       features: ['Kindergarten readiness', 'Early math & science', 'Advanced social skills'],
       linkColor: '#059669'
     }

@@ -2,7 +2,7 @@
   <div class="container">
     <div class="nav-content">
       <div class="nav-brand">
-        <a href="/" class="logo-container">
+        <a routerLink="/" class="logo-container">
           <img [src]="websiteLogo" alt="Woodhome Preschool Logo" />
         </a>
       </div>
@@ -13,13 +13,13 @@
           <lucide-icon name="house" class="nav-icon home-icon"></lucide-icon>
           Home
         </a>
-        <a routerLink="/about" class="nav-link">
-          <lucide-icon name="user" class="nav-icon users-icon"></lucide-icon>
-          About
-        </a>
         <a routerLink="/programs" class="nav-link">
           <lucide-icon name="book-open" class="nav-icon book-icon"></lucide-icon>
           Programs
+        </a>
+        <a routerLink="/about" class="nav-link">
+          <lucide-icon name="user" class="nav-icon users-icon"></lucide-icon>
+          About
         </a>
         <a routerLink="/contact" class="nav-link">
           <lucide-icon name="message-circle" class="nav-icon message-icon"></lucide-icon>
