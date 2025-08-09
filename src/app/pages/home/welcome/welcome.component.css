@@ -196,9 +196,10 @@
   color: #2563eb;
   font-weight: 500;
   background-color: white;
-  padding: 8px 20px;
+  padding: 12px 28px; /* Increased padding */
+  font-size: 1.05rem;  /* Slightly larger text */
   border-radius: 9999px;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06); /* Slightly deeper shadow */
   border: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
@@ -206,7 +207,7 @@
 
 .cta-button:hover {
   color: #1e40af;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 10px -1px rgba(0, 0, 0, 0.1);
 }
 
 .cta-arrow {
