@@ -12,9 +12,9 @@ import { RouterModule } from '@angular/router';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-    websiteLogo: string = 'assets/images/websiteLogo.webp';
-    
-    isMenuOpen = false;
+  websiteLogo: string = 'assets/images/websiteLogo.webp';
+
+  isMenuOpen = false;
 
   toggleMenu(): void {
     this.isMenuOpen = !this.isMenuOpen;
@@ -23,4 +23,4 @@ export class HeaderComponent {
   closeMenu(): void {
     this.isMenuOpen = false;
   }
-    }
+}

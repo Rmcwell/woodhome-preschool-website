@@ -1,6 +1,6 @@
 .container {
-    padding: 50px;
-    background: linear-gradient(to bottom, white, #dcf3ff);
+  padding: 50px;
+  background: linear-gradient(to bottom, white, #dcf3ff);
 }
 
 .find-us-section {
@@ -40,14 +40,14 @@
 }
 
 .map-container {
-  display: flex;                  /* Enables flexbox */
-  justify-content: center;       /* Centers horizontally */
-  align-items: center;           /* Centers vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 0.5rem;
   height: 100%;
   min-height: 400px;
   width: 75%;
-  margin: 0 auto;                /* Centers the container itself */
+  margin: 0 auto;
 }
 
 .map-frame {

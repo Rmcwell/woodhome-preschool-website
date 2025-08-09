@@ -15,5 +15,5 @@ import { RouterModule } from '@angular/router';
   styleUrls: ['./welcome.component.css']
 })
 export class HomeWelcomeComponent {
-  
+
 }

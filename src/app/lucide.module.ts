@@ -1,18 +1,19 @@
 import { NgModule } from '@angular/core';
-import { LucideAngularModule,
-         Phone,
-         Mail,
-         House,
-         Clock,
-         User,
-         BookOpen,
-         MessageCircle,
-         Star
-        } from 'lucide-angular';
+import {
+  LucideAngularModule,
+  Phone,
+  Mail,
+  House,
+  Clock,
+  User,
+  BookOpen,
+  MessageCircle,
+  Star
+} from 'lucide-angular';
 
 @NgModule({
   imports: [
-    LucideAngularModule.pick({ 
+    LucideAngularModule.pick({
       Phone,
       Mail,
       House,
@@ -25,4 +26,4 @@ import { LucideAngularModule,
   ],
   exports: [LucideAngularModule]
 })
-export class LucideIconsModule {}
+export class LucideIconsModule { }

@@ -1,11 +1,9 @@
 <div class="about-container">
   <!-- Hero Section -->
-    <app-hero-base
-        [title]="'About'"
-        [description]="'Providing quality early childhood education since 1995'">
-    </app-hero-base>
+  <app-hero-base [title]="'About'" [description]="'Providing quality early childhood education since 1995'">
+  </app-hero-base>
 
-   <!-- Our Story Section -->
+  <!-- Our Story Section -->
   <section class="story-section">
     <div class="container">
       <div class="story-grid">
@@ -15,13 +13,18 @@
           </h2>
           <div class="colorful-underline"></div>
           <p class="story-text">
-            Once upon a time in 1995, Miss Jane Wood had a wonderful dream - to create a special place where little ones could learn, play, and grow together! What started as a cozy home-based preschool has blossomed into a magical learning wonderland that our whole community loves.
+            Once upon a time in 1995, Miss Jane Wood had a wonderful dream - to create a special place where little ones
+            could learn, play, and grow together! What started as a cozy home-based preschool has blossomed into a
+            magical learning wonderland that our whole community loves.
           </p>
           <p class="story-text">
-            Our mission is simple: to create a warm, happy place where every child feels loved and excited to discover new things every single day. We believe each little one is absolutely unique and special, deserving of their own personalized adventure in learning!
+            Our mission is simple: to create a warm, happy place where every child feels loved and excited to discover
+            new things every single day. We believe each little one is absolutely unique and special, deserving of their
+            own personalized adventure in learning!
           </p>
           <p class="story-text">
-            Over the years, we've watched hundreds of tiny tots grow into confident, curious, and kind children ready to take on the world. It's pure magic! ✨
+            Over the years, we've watched hundreds of tiny tots grow into confident, curious, and kind children ready to
+            take on the world. It's pure magic! ✨
           </p>
           <div class="fun-facts">
             <div class="fact-item">
@@ -36,7 +39,9 @@
         </div>
         <div class="story-image">
           <div class="image-frame">
-            <img src="https://images.unsplash.com/photo-1544717684-1243da23b545?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80" alt="Happy children playing in our colorful classroom">
+            <img
+              src="https://images.unsplash.com/photo-1544717684-1243da23b545?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+              alt="Happy children playing in our colorful classroom">
             <div class="image-decoration">
               <div class="floating-element heart">💖</div>
               <div class="floating-element book">📖</div>
@@ -55,27 +60,32 @@
         <h2 class="philosophy-section-title rainbow-text">Our Learning Philosophy</h2>
         <div class="philosophy-rainbow-underline"></div>
         <p class="philosophy-section-subtitle">
-        Woodhome Preschool nurtures early development through sensory-rich experiences that build healthy habits, strong relationships, and lifelong learning skills.      </div>
+          Woodhome Preschool nurtures early development through sensory-rich experiences that build healthy habits,
+          strong relationships, and lifelong learning skills.
+      </div>
       <div class="philosophy-grid">
         <div class="philosophy-card creative-thinking">
           <div class="card-icon">💡</div>
           <h3 class="card-title">Creative Thinking</h3>
           <p class="card-text">
-            We encourage children to think for themselves in creative ways, fostering imagination and independent problem-solving skills that will serve them throughout their lives.
+            We encourage children to think for themselves in creative ways, fostering imagination and independent
+            problem-solving skills that will serve them throughout their lives.
           </p>
         </div>
         <div class="philosophy-card cooperation">
           <div class="card-icon">🤝</div>
           <h3 class="card-title">Working Together</h3>
           <p class="card-text">
-            Our programs help children learn to work cooperatively with other children and adults, building essential social skills and teamwork abilities.
+            Our programs help children learn to work cooperatively with other children and adults, building essential
+            social skills and teamwork abilities.
           </p>
         </div>
         <div class="philosophy-card academics">
           <div class="card-icon">📚</div>
           <h3 class="card-title">Academic Foundation</h3>
           <p class="card-text">
-            Our curriculum helps children grasp integral early academic learning concepts, building a strong foundation for future educational success.
+            Our curriculum helps children grasp integral early academic learning concepts, building a strong foundation
+            for future educational success.
           </p>
         </div>
       </div>
@@ -84,16 +94,16 @@
 
   <!-- Meet Our Team Section -->
   <section class="team-section">
-  <div class="container">
-    <div class="text-center">
-      <h2 class="team-section-title">Meet Our Amazing Team!</h2>
-      <div class="team-divider"></div>
-      <p class="team-section-subtitle">
-        Our wonderful teachers can't wait to meet your little ones and be part of their growing adventure!
-      </p>
-    </div>
-    <div class="team-grid">
-      @for (member of teamMembers; track member.name) {
+    <div class="container">
+      <div class="text-center">
+        <h2 class="team-section-title">Meet Our Amazing Team!</h2>
+        <div class="team-divider"></div>
+        <p class="team-section-subtitle">
+          Our wonderful teachers can't wait to meet your little ones and be part of their growing adventure!
+        </p>
+      </div>
+      <div class="team-grid">
+        @for (member of teamMembers; track member.name) {
         <div class="team-card">
           <div class="team-photo-container">
             <img [src]="member.photoUrl" [alt]="member.altText" class="team-photo">
@@ -104,10 +114,10 @@
           <p class="team-description">{{ member.description }}</p>
           <div class="team-emoji">{{ member.emoji }}</div>
         </div>
-      }
+        }
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
   <!-- Call to Action -->

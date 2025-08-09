@@ -190,11 +190,11 @@
   .container {
     padding: 0 1.5rem;
   }
-  
+
   .section-title {
     font-size: 2.25rem;
   }
-  
+
   .form-row {
     grid-template-columns: 1fr 1fr;
   }
@@ -204,15 +204,15 @@
   .container {
     padding: 0 2rem;
   }
-  
+
   .contact-grid {
     grid-template-columns: 1fr 1fr;
   }
-  
+
   .form-column {
     order: 1;
   }
-  
+
   .info-column {
     order: 2;
   }

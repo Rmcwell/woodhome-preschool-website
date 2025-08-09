@@ -7,14 +7,14 @@ import { RouterModule } from '@angular/router';
   selector: 'app-programs-home',
   standalone: true,
   imports: [
-    CommonModule, 
+    CommonModule,
     LucideIconsModule,
     RouterModule],
   templateUrl: './programs.component.html',
   styleUrls: ['./programs.component.css']
 })
 export class HomeProgramsComponent {
-    programs = [
+  programs = [
     {
       title: 'Morning Program',
       ageRange: '2 – 4 yrs',

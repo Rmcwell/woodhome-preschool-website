@@ -10,8 +10,8 @@ import { BaseHeroComponent } from '../../components/hero/hero.component';
   ],
   templateUrl: './contact.html',
   styleUrls: ['./contact.css']
-  
+
 })
 export class ContactPage {
-  
+
 }

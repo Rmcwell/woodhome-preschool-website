@@ -17,7 +17,7 @@ interface TeamMember {
   ],
   templateUrl: './about.html',
   styleUrls: ['./about.css']
-  
+
 })
 export class AboutPage {
   teamMembers: TeamMember[] = [

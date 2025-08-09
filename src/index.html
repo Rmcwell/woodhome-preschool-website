@@ -1,27 +1,36 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Woodhome Preschool Center</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
   <app-root></app-root>
 
   <!-- Hidden form field to get it to work -->
   <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+    <input type="hidden" name="form-name" value="contact" />
+
+    <!-- Honeypot field -->
+    <input type="text" name="bot-field" />
+
+    <!-- Match the same field names as your Angular form -->
     <input type="text" name="firstName" />
     <input type="text" name="lastName" />
     <input type="email" name="email" />
     <input type="tel" name="phone" />
     <select name="childAge">
-      <option>Below 2</option>
-      <option>2-3 years</option>
-      <option>3-4 years</option>
+      <option value="Below 2">Below 2</option>
+      <option value="2-3 years">2-3 years</option>
+      <option value="3-4 years">3-4 years</option>
     </select>
     <textarea name="message"></textarea>
-    </form>
+  </form>
 
 </body>
+
 </html>

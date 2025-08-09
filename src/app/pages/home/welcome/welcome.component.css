@@ -22,7 +22,7 @@
 
 .background-icon.bottom-left {
   margin-bottom: 5px;
-    bottom: 0;
+  bottom: 0;
   left: 0;
   background-image: url('https://cdn-icons-png.flaticon.com/512/3380/3380904.png');
 }
@@ -196,10 +196,10 @@
   color: #2563eb;
   font-weight: 500;
   background-color: white;
-  padding: 12px 28px; /* Increased padding */
-  font-size: 1.05rem;  /* Slightly larger text */
+  padding: 12px 28px;
+  font-size: 1.05rem;
   border-radius: 9999px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06); /* Slightly deeper shadow */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
   border: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;

@@ -167,10 +167,10 @@
   color: #2563eb;
   font-weight: 500;
   background-color: white;
-  padding: 12px 28px; /* Increased padding */
-  font-size: 1.05rem;  /* Slightly larger text */
+  padding: 12px 28px;
+  font-size: 1.05rem;
   border-radius: 9999px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06); /* Slightly deeper shadow */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
   border: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
@@ -193,11 +193,11 @@
   .hero-content {
     padding: 0 1.5rem;
   }
-  
+
   .container {
     padding: 0 1.5rem;
   }
-  
+
   .hero-title {
     font-size: 3rem;
   }
@@ -207,25 +207,25 @@
   .hero-content {
     padding: 0 2rem;
   }
-  
+
   .container {
     padding: 0 2rem;
   }
-  
+
   .program-grid {
     grid-template-columns: 1fr 1fr;
   }
-  
+
   .toddler-program .program-content,
   .prek-program .program-content {
     order: 1;
   }
-  
+
   .toddler-program .program-image,
   .prek-program .program-image {
     order: 2;
   }
-  
+
   .schedule-grid {
     grid-template-columns: 1fr 1fr;
   }

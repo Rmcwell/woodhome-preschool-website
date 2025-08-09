@@ -10,7 +10,7 @@ import { LucideIconsModule } from '../../../lucide.module';
   styleUrls: ['./testimonials.component.css']
 })
 export class HomeTestimonialsComponent {
-    stars = Array(5);
+  stars = Array(5);
 
   testimonials = [
     {

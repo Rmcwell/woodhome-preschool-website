@@ -1,4 +1,4 @@
-import { Component  } from '@angular/core';
+import { Component } from '@angular/core';
 import { LucideIconsModule } from '../../lucide.module';
 import { RouterModule } from '@angular/router';
 
@@ -15,7 +15,7 @@ import { RouterModule } from '@angular/router';
 
 export class FooterComponent {
 
-    currentYear = new Date().getFullYear();
+  currentYear = new Date().getFullYear();
 
 
 }
