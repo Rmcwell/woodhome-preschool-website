@@ -6,6 +6,9 @@
         <!-- Need to add the form hidden to src/index.html for some reason to get Netlify to pick up the submission -->
         <form name="contact" method="POST" netlify="true" netlify-honeypot="bot-field">
 
+          <!-- Set email subject -->
+          <input type="hidden" name="subject" value="New Contact Form Submission from Website" />
+
           <!-- Netlify form detection -->
           <input type="hidden" name="form-name" value="contact" />
 
