@@ -13,12 +13,11 @@
 
   <!-- Hidden form field to get it to work -->
   <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+    <!-- Match the same field names as your Angular form -->
     <input type="hidden" name="form-name" value="contact" />
 
-    <!-- Honeypot field -->
     <input type="text" name="bot-field" />
 
-    <!-- Match the same field names as your Angular form -->
     <input type="text" name="firstName" />
     <input type="text" name="lastName" />
     <input type="email" name="email" />
