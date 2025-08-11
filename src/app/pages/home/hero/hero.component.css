@@ -33,19 +33,19 @@
   position: relative;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 6rem 1rem;
+  padding: 3rem 1rem;
   z-index: 1;
 }
 
 @media (min-width: 640px) {
   .hero-content {
-    padding: 8rem 1.5rem;
+    padding: 7rem 1.5rem;
   }
 }
 
 @media (min-width: 1024px) {
   .hero-content {
-    padding: 8rem 2rem;
+    padding: 7rem 2rem;
   }
 }
 
@@ -83,12 +83,21 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  min-width: 5rem;
 }
 
 @media (min-width: 640px) {
   .hero-buttons {
     flex-direction: row;
     gap: 1rem;
+  }
+}
+
+@media (max-width: 639px) {
+  .btn {
+    width: auto;
+    max-width: 80%;
+    align-self: center;
   }
 }
 

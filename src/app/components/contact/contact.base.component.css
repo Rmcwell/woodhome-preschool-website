@@ -40,8 +40,15 @@
 
 .form-row {
   display: grid;
-  grid-template-columns: 1fr;
   gap: 1.5rem;
+}
+
+/* Remove gap on mobile */
+@media (max-width: 768px) {
+  .form-row {
+    gap: 0;
+    margin-bottom: 1.5rem;
+  }
 }
 
 .form-group {
@@ -85,6 +92,20 @@
   min-height: 4rem;
 }
 
+.required-asterisk {
+  color: red;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 4px;
+}
+
+input.form-input.ng-invalid.ng-touched {
+  border-color: red;
+}
+
 .submit-button {
   width: 100%;
   background-color: #2563eb;
@@ -100,6 +121,11 @@
 
 .submit-button:hover {
   background-color: #1d4ed8;
+}
+
+.submit-button[disabled] {
+  background-color: #797979;
+  cursor: not-allowed;
 }
 
 /* Info Column */
@@ -186,7 +212,7 @@
 }
 
 /* Responsive Design */
-@media (min-width: 640px) {
+@media (min-width: 768px) {
   .container {
     padding: 0 1.5rem;
   }
@@ -207,6 +233,21 @@
 
   .contact-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .form-column {
+    order: 1;
+  }
+
+  .info-column {
+    order: 2;
+  }
+}
+
+/* Mobile override */
+@media (max-width: 768px) {
+  .contact-grid {
+    flex-direction: column;
   }
 
   .form-column {

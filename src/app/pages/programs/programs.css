@@ -1,16 +1,17 @@
+/* Programs Container */
 .programs-container {
   width: 100%;
 }
 
 /* Container */
 .container {
-  max-width: 80rem;
+  max-width: 75rem;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 /* Section Headers */
-
 .section-title {
   font-size: 1.875rem;
   font-weight: 700;
@@ -21,32 +22,41 @@
 .section-subtitle {
   font-size: 1.25rem;
   color: #4b5563;
-  margin-bottom: 50px;
+  margin: 20px 0px;
   text-align: center;
 }
 
 /* Programs Overview */
-.programs-overview {
-  padding: 4rem 0;
-  background-color: white;
-}
 
+/* Program Section */
 .program-section {
-  margin-bottom: 4rem;
+  width: 100%;
+  background: linear-gradient(to bottom, white, #ebf8ff);
+  padding: 3rem 0;
 }
 
 .program-section:last-child {
   margin-bottom: 0;
 }
 
+.program-section .container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Grid Layout */
 .program-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 3rem;
+  gap: 2rem;
   align-items: center;
 }
 
-.program-content {
+/* Default stacking order for mobile */
+.program-content,
+.program-content-left {
   order: 2;
 }
 
@@ -54,24 +64,48 @@
   order: 1;
 }
 
-.left-class .program-content,
-.prek-program .program-content {
-  order: 2;
+/* Desktop layout with reverse modifier */
+@media (min-width: 1024px) {
+  .program-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .program-grid.reverse .program-content,
+  .program-grid.reverse .program-content-left {
+    order: 2;
+  }
+
+  .program-grid.reverse .program-image {
+    order: 1;
+  }
+
+  .program-grid:not(.reverse) .program-content,
+  .program-grid:not(.reverse) .program-content-left {
+    order: 1;
+  }
+
+  .program-grid:not(.reverse) .program-image {
+    order: 2;
+  }
 }
 
-.toddler-program .program-image,
-.prek-program .program-image {
-  order: 1;
+/* Mobile override to normalize stacking */
+@media (max-width: 1023px) {
+  .program-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .program-content,
+  .program-content-left {
+    order: 2 !important;
+  }
+
+  .program-image {
+    order: 1 !important;
+  }
 }
 
-.preschool-program .program-content {
-  order: 2;
-}
-
-.preschool-program .program-image {
-  order: 1;
-}
-
+/* Program Content Styling */
 .program-title {
   font-size: 1.5rem;
   font-weight: 700;
@@ -90,18 +124,16 @@
   margin-bottom: .5rem;
 }
 
-.program-description {
+.program-description,
+.program-description-list {
   color: #4b5563;
   line-height: 1.6;
   margin-bottom: .5rem;
 }
 
-.program-description-list {
-  color: #4b5563;
-  line-height: 1.6;
-}
-
-.program-list {
+.program-list,
+.tuition-details,
+.description-details-list {
   list-style-type: disc;
   padding-left: 1.25rem;
   margin-bottom: 1.5rem;
@@ -109,32 +141,25 @@
   line-height: 1.6;
 }
 
-.program-list li {
+.program-list li,
+.tuition-details li,
+.description-details-list li {
   margin-bottom: 0.5rem;
 }
-
-.tuition-details {
-  margin-left: 1.5rem;
-  list-style-type: disc;
-}
-
-.description-details-list {
-  margin-left: 1.5rem;
-  list-style-type: disc;
-  margin-bottom: 0.5rem;
-}
-
 
 .program-footer {
   color: #4b5563;
   line-height: 1.6;
 }
 
+/* Program Image */
 .program-img {
   border-radius: 0.5rem;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
   width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 /* Enrollment CTA */
@@ -150,13 +175,13 @@
 .cta-title {
   font-size: 1.875rem;
   font-weight: 700;
-  color: rgb(95, 95, 95);
+  color: rgb(0, 0, 0);
   margin: 0 0 1rem 0;
 }
 
 .cta-subtitle {
   font-size: 1.25rem;
-  color: #8f8f8f;
+  color: #424242;
   margin: 0 auto 2rem auto;
   max-width: 48rem;
 }
@@ -188,7 +213,7 @@
   margin-left: 4px;
 }
 
-/* Responsive Design */
+/* Responsive Typography */
 @media (min-width: 640px) {
   .hero-content {
     padding: 0 1.5rem;
@@ -210,20 +235,6 @@
 
   .container {
     padding: 0 2rem;
-  }
-
-  .program-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .toddler-program .program-content,
-  .prek-program .program-content {
-    order: 1;
-  }
-
-  .toddler-program .program-image,
-  .prek-program .program-image {
-    order: 2;
   }
 
   .schedule-grid {

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { BaseHeroComponent } from '../../components/hero/hero.component';
+import { RouterModule } from '@angular/router';
 
 interface TeamMember {
   name: string;
@@ -13,7 +14,8 @@ interface TeamMember {
 @Component({
   selector: 'app-about',
   imports: [
-    BaseHeroComponent
+    BaseHeroComponent,
+    RouterModule
   ],
   templateUrl: './about.html',
   styleUrls: ['./about.css']
