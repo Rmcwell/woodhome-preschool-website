@@ -127,7 +127,7 @@
 .program-description,
 .program-description-list {
   color: #4b5563;
-  line-height: 1.6;
+  line-height: 1.5;
   margin-bottom: .5rem;
 }
 
@@ -138,7 +138,7 @@
   padding-left: 1.25rem;
   margin-bottom: 1.5rem;
   color: #4b5563;
-  line-height: 1.6;
+  line-height: 1.2;
 }
 
 .program-list li,

@@ -18,7 +18,7 @@ export class HomeProgramsComponent {
     {
       title: 'Morning Program',
       ageRange: '2 – 4 yrs',
-      imgSrc: 'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+      imgSrc: 'https://images.unsplash.com/photo-1578349035260-9f3d4042f1f7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
       borderColor: '#60a5fa',
       iconBg: '#dbebfe',
       iconLetter: 'M',
@@ -29,7 +29,7 @@ export class HomeProgramsComponent {
     {
       title: 'Afternoon Program',
       ageRange: '3 – 4 yrs',
-      imgSrc: 'https://images.unsplash.com/photo-1587654780291-39c9404d746b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+      imgSrc: 'https://plus.unsplash.com/premium_photo-1663090965547-f3dccf770b3b?q=80&w=1184&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       borderColor: '#fbbf24',
       iconBg: '#fef3c7',
       iconLetter: 'A',
@@ -40,7 +40,7 @@ export class HomeProgramsComponent {
     {
       title: 'Before/Aftercare Program',
       ageRange: '2 – 4 yrs',
-      imgSrc: 'https://images.unsplash.com/photo-1627556704290-2b1f5853ff78?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
+      imgSrc: 'https://images.unsplash.com/photo-1587654780291-39c9404d746b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80',
       borderColor: '#34d399',
       iconBg: '#dcfce7',
       iconLetter: 'B',
