@@ -1,7 +1,6 @@
 .hero-section {
   position: relative;
   background-color: #2563eb;
-  height: 50vh;
 }
 
 .hero-background {
@@ -35,18 +34,6 @@
   margin: 0 auto;
   padding: 3rem 1rem;
   z-index: 1;
-}
-
-@media (min-width: 640px) {
-  .hero-content {
-    padding: 7rem 1.5rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .hero-content {
-    padding: 7rem 2rem;
-  }
 }
 
 .hero-title {
