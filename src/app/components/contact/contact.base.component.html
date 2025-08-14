@@ -4,10 +4,11 @@
       <div class="form-card">
         <h3 class="form-title">Get in Touch</h3>
         <!-- Need to add the form hidden to src/index.html for some reason to get Netlify to pick up the submission -->
-        <form name="contact" method="POST" [formGroup]="contactForm" netlify netlify-honeypot="bot-field">
+        <form name="contact" method="POST" [formGroup]="contactForm" (ngSubmit)="onSubmit()" netlify netlify-honeypot="bot-field">
 
           <!-- Netlify form detection -->
           <input type="hidden" name="form-name" value="contact" />
+          <input type="hidden" name="subject" value="New Contact Submission" data-remove-prefix />
 
           <!-- Honeypot field (hidden from users) -->
           <p class="honeypot" style="display:none;" aria-hidden="true">
@@ -30,10 +31,10 @@
             <label for="email" class="form-label">Email <span class="required-asterisk">*</span></label>
             <input type="email" id="email" name="email" formControlName="email" class="form-input"
               autocomplete="email" />
-              @if (contactForm.get('email')?.invalid && contactForm.get('email')?.touched) {
-              <p class="error-message">
-                Please enter a valid email address.
-              </p>           }
+            @if (contactForm.get('email')?.invalid && contactForm.get('email')?.touched) {
+            <p class="error-message">
+              Please enter a valid email address.
+            </p> }
           </div>
 
           <div class="form-group">
@@ -57,10 +58,20 @@
               placeholder="Include any details you'd like us to know — availability, concerns, and/or preferences."></textarea>
           </div>
 
-          <button type="submit" class="submit-button" name="submit" [disabled]="contactForm.invalid" [class.disabled]="contactForm.invalid">
+          <button type="submit" class="submit-button" name="submit" [disabled]="contactForm.invalid"
+            [class.disabled]="contactForm.invalid">
             Send Message
           </button>
         </form>
+
+        @if (formSubmitted)
+        {
+        <div class="success-message">
+          ✅ Your message has been sent successfully. We'll be in touch soon!
+        </div>
+        }
+
+
       </div>
     </div>
 

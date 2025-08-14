@@ -24,4 +24,16 @@ export class BaseContactComponent {
       botField: [''] // Honeypot field
     });
   }
+
+  formSubmitted = false;
+
+  onSubmit(): void {
+    if (this.contactForm.valid) {
+      this.formSubmitted = true;
+
+      // Optionally reset the form
+      this.contactForm.reset();
+    }
+  }
+
 }
