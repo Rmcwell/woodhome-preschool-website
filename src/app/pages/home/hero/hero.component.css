@@ -39,6 +39,12 @@
   z-index: 1;
 }
 
+@media (min-width: 640px) {
+  .hero-content {
+
+  }
+}
+
 .hero-title {
   font-size: 2.25rem;
   font-weight: 800;
@@ -83,7 +89,7 @@
   }
 }
 
-@media (max-width: 639px) {
+@media (max-width: 640px) {
   .btn {
     width: auto;
     max-width: 80%;
