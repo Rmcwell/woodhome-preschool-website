@@ -27,12 +27,23 @@ export class BaseContactComponent {
 
   formSubmitted = false;
 
-  onSubmit(): void {
-    if (this.contactForm.valid) {
-      this.formSubmitted = true;
+  onSubmit(event: Event) {
+    event.preventDefault(); // Prevent default Angular handling
 
-      // Optionally reset the form
-      this.contactForm.reset();
+    if (this.contactForm.valid) {
+      const form = event.target as HTMLFormElement;
+      const formData = new FormData(form);
+
+      fetch("/", {
+        method: "POST",
+        body: formData,
+      })
+        .then(() => {
+          alert("Form successfully submitted!");
+          this.formSubmitted = true;
+          this.contactForm.reset();
+        })
+        .catch((error) => alert("Error submitting form: " + error));
     }
   }
 

@@ -10,27 +10,6 @@
 
 <body>
   <app-root></app-root>
-
-  <!-- Hidden form field to get it to work -->
-  <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-    <!-- Match the same field names as your Angular form -->
-    <input type="hidden" name="form-name" value="contact" />
-    <input type="hidden" name="subject" value="New Contact Submission" data-remove-prefix />
-
-    <input type="text" name="bot-field" />
-
-    <input type="text" name="firstName" />
-    <input type="text" name="lastName" />
-    <input type="email" name="email" />
-    <input type="tel" name="phone" />
-    <select name="childAge">
-      <option value="Below 2">Below 2</option>
-      <option value="2-3 years">2-3 years</option>
-      <option value="3-4 years">3-4 years</option>
-    </select>
-    <textarea name="message"></textarea>
-  </form>
-
 </body>
 
 </html>
