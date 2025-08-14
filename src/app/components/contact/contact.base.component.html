@@ -4,7 +4,7 @@
       <div class="form-card">
         <h3 class="form-title">Get in Touch</h3>
         <!-- Need to add the form hidden to src/index.html for some reason to get Netlify to pick up the submission -->
-        <form name="contact" method="POST" [formGroup]="contactForm" netlify="true" netlify-honeypot="bot-field">
+        <form name="contact" method="POST" [formGroup]="contactForm" netlify netlify-honeypot="bot-field">
 
           <!-- Netlify form detection -->
           <input type="hidden" name="form-name" value="contact" />

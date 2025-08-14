@@ -63,6 +63,9 @@
   overflow: hidden;
   transform: translateY(0);
   transition: transform 0.3s, box-shadow 0.3s;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 .program-card:hover {

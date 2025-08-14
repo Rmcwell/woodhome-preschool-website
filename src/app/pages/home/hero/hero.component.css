@@ -1,6 +1,11 @@
 .hero-section {
   position: relative;
   background-color: #2563eb;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
 }
 
 .hero-background {
@@ -30,9 +35,7 @@
 
 .hero-content {
   position: relative;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 3rem 1rem;
+  padding: 4rem 3rem;
   z-index: 1;
 }
 
@@ -84,7 +87,6 @@
   .btn {
     width: auto;
     max-width: 80%;
-    align-self: center;
   }
 }
 

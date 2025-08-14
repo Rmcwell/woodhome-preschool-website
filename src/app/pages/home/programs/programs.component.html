@@ -11,7 +11,7 @@
 
     <div class="card-grid">
       @for (program of programs; track program) {
-      <div class="program-card" [style.border-top-color]="program.borderColor">
+      <div class="program-card" routerLink="/programs" [style.border-top-color]="program.borderColor">
         <div class="image-wrapper">
           <img [src]="program.imgSrc" [alt]="program.title" class="card-image">
           <div class="age-tag" [style.background-color]="program.borderColor">{{ program.ageRange }}</div>
