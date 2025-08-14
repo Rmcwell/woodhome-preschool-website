@@ -128,6 +128,36 @@ input.form-input.ng-invalid.ng-touched {
   cursor: not-allowed;
 }
 
+.success-message {
+  background-color: #e6f7e6;
+  border: 2px solid #28a745;
+  color: #155724;
+  padding: 1.25rem;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: 1.5rem auto;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.success-message h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.success-message p {
+  margin: 0.5rem 0;
+  line-height: 1.4;
+}
+
+.success-link {
+  color: #155724;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
 /* Info Column */
 .info-column {
   order: 1;
@@ -245,7 +275,7 @@ input.form-input.ng-invalid.ng-touched {
 }
 
 /* Mobile override */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .contact-grid {
     flex-direction: column;
   }

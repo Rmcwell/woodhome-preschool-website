@@ -39,7 +39,6 @@ export class BaseContactComponent {
         body: formData,
       })
         .then(() => {
-          alert("Form successfully submitted!");
           this.formSubmitted = true;
           this.contactForm.reset();
         })
