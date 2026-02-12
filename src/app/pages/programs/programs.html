@@ -8,194 +8,39 @@
   <section class="programs-overview">
     <div class="text-center">
       <p class="section-subtitle">
-        Children are welcome to sign up for our morning and afternoon programs if extended care is needed. <br />
-        Our school year runs from <strong>September through May</strong>.
-        Each classroom accommodates approximately <strong>10 students</strong>.
+        Our school year is September through May. Before-care, after-care and 5-day care options are available to enrolled
+        children. Inquire directly with specific scheduling needs and tuition information.
       </p>
     </div>
-
-    <!-- Morning 2's Class -->
+    @for (program of programs; track program.title) {
     <div class="program-section">
       <div class="container">
-        <div class="program-grid left-class">
-          <div class="program-content-left">
-            <h3 class="program-title">Morning 2's Class</h3>
-            <div class="program-underline"></div>
-            <p class="program-time">
-              <strong>Time:</strong> 9am – 12pm Tuesday & Thursday
-            </p>
-            <p class="program-description">
-              <strong>Description: </strong>
-              Supports independence, social awareness, sensory exploration, fine and gross motor skills development, and
-              language enrichment. Children learn through purposeful play both indoors and outdoors with a variety of
-              materials promoting exploration, creativity, and imagination.
-            </p>
-            <p class="program-tuition">
-              <strong>Tuition:</strong> $2,592
-            </p>
-            <ul class="tuition-details">
-              <li>Can be paid in full (5% discount) or 9 monthly payments starting Sept. 1st</li>
-              <li>Prorated according to when a student enrolls.</li>
-            </ul>
+          <div class="program-grid" [class.reverse]="program.reverse">
+            <div class="program-content">
+              <h3 class="program-title">{{ program.title }}</h3>
+              <h4 class="program-subtitle">{{ program.subtitle }}</h4>
+              <div class="program-underline"></div>
+              @if (program.times != undefined)
+              {
+                <p class="program-time">
+                  <strong>Time:</strong> 
+                  <span [innerHTML]="program.times"></span>
+                  </p>
+              }
+              <p class="program-description">
+                <strong>Description: </strong>
+                {{ program.description }}
+              </p>
+            </div>
+            <div class="program-image">
+              <img
+                src="{{ program.image }}"
+                alt="{{ program.title }}" class="program-img" />
+            </div>
           </div>
-          <div class="program-image">
-            <img
-              src="https://images.unsplash.com/photo-1453749024858-4bca89bd9edc?q=80&w=1120&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="Morning 2's Class" class="program-img" />
-          </div>
-        </div>
       </div>
     </div>
-
-    <!-- Morning 3's Class -->
-    <div class="program-section">
-      <div class="container">
-        <div class="program-grid reverse">
-          <div class="program-content">
-            <h3 class="program-title">Morning 3's Class</h3>
-            <div class="program-underline"></div>
-            <p class="program-time">
-              <strong>Time:</strong> 9am – 12pm Monday, Wednesday, Friday
-            </p>
-            <p class="program-description">
-              <strong>Description: </strong>
-              The perfect balance between fun and learning. It offers a clear pathway to academic growth and exploration
-              through the basic preschool fundamentals such as shapes, letter and number recognition and gross and fine
-              motor development. This program encourages various formats of hands-on learning and supports learning
-              through play.
-            </p>
-            <p class="program-tuition">
-              <strong>Tuition:</strong> $3,240
-            </p>
-            <ul class="tuition-details">
-              <li>Can be paid in full (5% discount) or 9 monthly payments starting Sept. 1st</li>
-              <li>Prorated according to when a student enrolls.</li>
-            </ul>
-          </div>
-          <div class="program-image">
-            <img
-              src="https://images.unsplash.com/photo-1564429238817-393bd4286b2d?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="Morning 3's Class" class="program-img" />
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Morning 4's Class -->
-    <div class="program-section">
-      <div class="container">
-        <div class="program-grid">
-          <div class="program-content-left">
-            <h3 class="program-title">Morning 4's Class</h3>
-            <div class="program-underline"></div>
-            <p class="program-time">
-              <strong>Time:</strong> 9am – 12pm Monday - Friday
-            </p>
-            <p class="program-description-list">
-              <strong>Description: </strong>
-              Our 5 day 4’s program offers a clear pathway to Kindergarten through exploratory play and hands-on
-              learning methods.
-              This program reviews preschool fundamentals and focuses on kindergarten readiness skills such as:
-            </p>
-            <ul class="description-details-list">
-              <li>Social and emotional development</li>
-              <li>Creative outlets and opportunities</li>
-              <li>Number recognition and age-appropriate math skills</li>
-              <li>Pre-reading skills and early literacy</li>
-            </ul>
-            <p class="program-tuition">
-              <strong>Tuition:</strong> $5,400
-            </p>
-            <ul class="tuition-details">
-              <li>Can be paid in full (5% discount) or 9 monthly payments starting Sept. 1st</li>
-              <li>Prorated according to when a student enrolls.</li>
-            </ul>
-          </div>
-          <div class="program-image">
-            <img
-              src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-              alt="Morning 4's Class" class="program-img" />
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Afternoon 3's/4's Class -->
-    <div class="program-section">
-      <div class="container">
-        <div class="program-grid reverse">
-          <div class="program-content">
-            <h3 class="program-title">Afternoon 3's/4's Class</h3>
-            <div class="program-underline"></div>
-            <p>
-              <strong>Time:</strong>
-            </p>
-            <ul class="description-details-list">
-              <li>3 days: 12:30pm – 3:30pm, Monday, Wednesday, Friday</li>
-              <li>5 days: 12:30pm – 3:30pm, Monday – Friday</li>
-            </ul>
-            <p class="program-description">
-              <strong>Description: </strong>
-              Our afternoon program offers a collaborative learning experience where children grow from their current
-              educational level.
-              This program introduces different curriculum approaches but follows the same theme and focus as the
-              morning classes, and serves
-              as extended enrichment for children who attend a morning class in addition to the afternoon class.
-            </p>
-            <p class="program-tuition">
-              <strong>Tuition:</strong> paid in full at a 5% discount or 9 monthly payments starting Sept 1st
-            </p>
-            <ul class="tuition-details">
-              <li>5 Days: $5,400</li>
-              <li>3 Days: $3,240</li>
-            </ul>
-          </div>
-          <div class="program-image">
-            <img
-              src="https://images.unsplash.com/photo-1554721299-e0b8aa7666ce?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="Afternoon 3's/4's Class" class="program-img" />
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Before/Aftercare -->
-    <div class="program-section">
-      <div class="container">
-        <div class="program-grid">
-          <div class="program-content-left">
-            <h3 class="program-title">Before/Aftercare</h3>
-            <div class="program-underline"></div>
-            <p class="program-time">
-              <strong>Beforecare</strong>
-            </p>
-            <ul class="description-details-list">
-              <li>Time: 8am - 9am</li>
-              <li>Available on a consistent basis or drop-in with advanced notice</li>
-            </ul>
-            <p class="program-time">
-              <strong>Aftercare</strong>
-            </p>
-            <ul class="description-details-list">
-              <li>Time: 3:30pm - 5:30pm</li>
-              <li>Inquire directly about availability. Depends on interest, per school year</li>
-            </ul>
-            <p class="program-tuition">
-              <strong>2 Year Olds</strong>
-            </p>
-            <ul class="tuition-details">
-              <li>Inquire directly regarding before/aftercare availability for 2-year-olds. This option may/may not be
-                available depending on the school year.</li>
-            </ul>
-          </div>
-          <div class="program-image">
-            <img
-              src="https://images.unsplash.com/photo-1620398722262-969d8f2bc875?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="Morning 2's Class" class="program-img" />
-          </div>
-        </div>
-      </div>
-    </div>
+  }
   </section>
 
   <!-- Enrollment CTA -->

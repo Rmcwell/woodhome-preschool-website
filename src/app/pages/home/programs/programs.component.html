@@ -8,48 +8,6 @@
         through play, exploration, and creativity!
       </p>
     </div>
-
-    <div class="card-grid">
-      @for (program of programs; track program) {
-      <div class="program-card" routerLink="/programs" [style.border-top-color]="program.borderColor">
-        <div class="image-wrapper">
-          <img [src]="program.imgSrc" [alt]="program.title" class="card-image">
-          <div class="age-tag" [style.background-color]="program.borderColor">{{ program.ageRange }}</div>
-        </div>
-        <div class="card-content">
-          <div class="title-row">
-            <div class="icon-circle" [style.background-color]="program.iconBg">
-              <span [style.color]="program.iconColor" class="icon-letter">{{ program.iconLetter }}</span>
-            </div>
-            <h3 class="card-title">{{ program.title }}</h3>
-          </div>
-          <p class="card-desc">{{ program.description }}</p>
-          <ul class="features-list">
-            @for (feature of program.features; track $index) {
-            <li>
-              <svg class="check-icon" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 
-                             00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 
-                             00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" />
-              </svg>
-              {{ feature }}
-            </li>
-            }
-          </ul>
-          <a routerLink="/programs" class="learn-more" [style.color]="program.borderColor">
-            Learn more
-            <svg class="arrow-icon" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 
-                         1 0 010 1.414l-4 4a1 1 0
-                         01-1.414-1.414L14.586 11H3a1 1
-                         0 110-2h11.586l-2.293-2.293a1
-                         1 0 010-1.414z" />
-            </svg>
-          </a>
-        </div>
-      </div>
-      }
-    </div>
     <div class="view-all-btn-wrapper">
       <button routerLink="/programs" class="view-all-btn">
         View All Programs

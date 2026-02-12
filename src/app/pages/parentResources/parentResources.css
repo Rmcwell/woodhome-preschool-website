@@ -1,0 +1,40 @@
+.find-us-section {
+    background: linear-gradient(to bottom, white, #ebf8ff);
+    padding: 4rem 1rem;
+}
+
+.find-us-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+    .find-us-container {
+        padding: 0 7rem;
+    }
+}
+
+.text-center {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #111827;
+    text-align: center;
+}
+
+.divider {
+    width: 6rem;
+    height: 0.5rem;
+    background-color: #f472b6;
+    margin: 1rem auto;
+    border-radius: 9999px;
+}
+
+.section-subtitle {
+    font-size: 1.25rem;
+    color: #4b5563;
+    margin-bottom: 2rem; }

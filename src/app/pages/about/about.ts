@@ -34,23 +34,31 @@ export class AboutPage {
     {
       name: 'Sunny Fisher',
       title: 'Lead Teacher',
-      description: 'Former owner of Woodhome Preschool for over 25 years, Mrs. Sunny continues to bring creativity, warmth, and a family-like spirit to the classroom, touching the hearts of every child she teaches.',
+      description: 'Former owner of Woodhome Preschool Center for over 25 years, Mrs. Sunny continues to bring creativity, warmth, and a family-like spirit to the classroom, touching the hearts of every child she teaches.',
       photoUrl: 'assets/images/Sunny.webp',
       emoji: '👩‍🏫',
       altText: 'Sunny Fisher'
     },
     {
+      name: 'Ann Mosely',
+      title: 'Lead Teacher',
+      description: 'Mrs. Ann’s dynamic and energetic approach to learning is unique and well-loved by all children who are lucky enough to be in her class. With over 20 years in the field, Mrs. Ann’s intentional guidance and love for her students always shines through… She brings the fun to Woodhome!',
+      photoUrl: 'assets/images/womanPlaceholder.webp',
+      emoji: '🍎',
+      altText: 'Ann Mosely'
+    },
+    {
       name: 'Abbie Matson',
       title: 'Assistant Teacher',
-      description: 'Since joining in 2021, Ms. Abbie’s fun-loving nature, responsiveness, and deep care for her students have made her an irreplaceable favorite in the nurturing Woodhome Preschool environment.',
+      description: 'Since joining in 2021, Ms. Abbie’s fun-loving nature, responsiveness, and deep care for her students have made her an irreplaceable favorite in the nurturing Woodhome Preschool Center environment.',
       photoUrl: 'assets/images/Abbie.webp',
       emoji: '🤝',
       altText: 'Abbie Matson'
     },
     {
       name: 'Caroline Mitrus',
-      title: 'Assistant Teacher',
-      description: 'With strong classroom management and a playful, empathetic approach, Mrs. Caroline builds lasting connections and makes learning joyful in Woodhome Preschool’s family-like atmosphere.',
+      title: 'Teaching Aide',
+      description: 'With strong classroom management and a playful, empathetic approach, Mrs. Caroline builds lasting connections and makes learning joyful in Woodhome Preschool Center’s family-like atmosphere.',
       photoUrl: 'assets/images/Caroline.webp',
       emoji: '🎨',
       altText: 'Caroline Mitrus'
@@ -66,7 +74,7 @@ export class AboutPage {
     {
       name: 'Kate Fitzgerald',
       title: 'Substitute Teacher',
-      description: 'A retired director with over 20 years of preschool experience, Mrs. Kate now brings joy and energy as a beloved substitute teacher and fun-maker at Woodhome Preschool.',
+      description: 'A retired director with over 20 years of preschool experience, Mrs. Kate now brings joy and energy as a beloved substitute teacher and fun-maker at Woodhome Preschool Center.',
       photoUrl: 'assets/images/womanPlaceholder.webp',
       emoji: '🎉',
       altText: 'Kate Fitzgerald'

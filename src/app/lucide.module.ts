@@ -8,7 +8,8 @@ import {
   User,
   BookOpen,
   MessageCircle,
-  Star
+  Star,
+  CalendarClock
 } from 'lucide-angular';
 
 @NgModule({
@@ -21,7 +22,8 @@ import {
       User,
       BookOpen,
       MessageCircle,
-      Star
+      Star,
+      CalendarClock
     })
   ],
   exports: [LucideAngularModule]
