@@ -4,29 +4,6 @@
   position: relative;
 }
 
-.background-icon {
-  position: absolute;
-  width: 160px;
-  height: 160px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  opacity: 0.2;
-}
-
-.background-icon.top-right {
-  margin-top: 10px;
-  top: 0;
-  right: 0;
-  background-image: url('https://cdn-icons-png.flaticon.com/512/4341/4341093.png');
-}
-
-.background-icon.bottom-left {
-  margin-bottom: 5px;
-  bottom: 0;
-  left: 0;
-  background-image: url('https://cdn-icons-png.flaticon.com/512/3380/3380904.png');
-}
-
 .container {
   max-width: 1280px;
   margin: 0 auto;

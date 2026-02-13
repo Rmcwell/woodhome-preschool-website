@@ -1,40 +1,56 @@
-.find-us-section {
+.payment-section {
     background: linear-gradient(to bottom, white, #ebf8ff);
     padding: 4rem 1rem;
 }
 
-.find-us-container {
+.payment-container {
     max-width: 1280px;
     margin: 0 auto;
 }
 
-@media (min-width: 640px) {
-    .find-us-container {
-        padding: 0 7rem;
-    }
-}
-
-.text-center {
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.section-title {
+.parent-titles {
     font-size: 2rem;
     font-weight: bold;
     color: #111827;
-    text-align: center;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
 }
 
-.divider {
-    width: 6rem;
-    height: 0.5rem;
-    background-color: #f472b6;
-    margin: 1rem auto;
-    border-radius: 9999px;
+.parent-titles:first-child {
+    margin-top: 0;
 }
 
-.section-subtitle {
-    font-size: 1.25rem;
+.bullet-points {
+    list-style-type: disc;
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+}
+
+.bullet-points li {
+    margin-bottom: 0.75rem;
+    color: #374151;
+}
+
+.bullet-points a {
+    color: #2563eb;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.bullet-points a:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+.payment-container>p {
     color: #4b5563;
-    margin-bottom: 2rem; }
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 640px) {
+    .payment-container {
+        padding: 0 2rem;
+    }
+}

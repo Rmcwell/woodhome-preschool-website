@@ -4,7 +4,7 @@
   position: sticky;
   top: 0;
   z-index: 9999;
-  border-bottom: 4px solid #fbbf24;
+  border-bottom: 4px solid var(--brand-blue);
 }
 
 .container {
@@ -112,7 +112,7 @@
 }
 
 .nav-link:hover {
-  color: #2563eb;
+  color: var(--brand-blue);
   cursor: pointer;
 }
 
@@ -261,7 +261,7 @@
 }
 
 .mobile-nav-link:hover {
-  color: #2563eb;
+  color: var(--brand-blue);
 }
 
 .mobile-nav-icon {

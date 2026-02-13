@@ -7,6 +7,4 @@ import { Component, Input } from '@angular/core';
 })
 export class BaseHeroComponent {
   @Input() title: string = 'Welcome';
-  @Input() subtitle: string = 'Default subtitle text';
-  @Input() description: string = 'Default description text';
 }

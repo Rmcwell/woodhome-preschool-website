@@ -4,8 +4,8 @@
 
 .hero-container {
   position: relative;
-  height: 35vh;
-  min-height: 35vh;
+  height: 25vh;
+  min-height: 25vh;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   overflow: hidden;
   display: flex;

@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Quicksand:wght@500;600;700&display=swap');
 
 * {
   margin: 0;
@@ -9,26 +9,34 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Quicksand';
   line-height: 1.6;
   color: #374151;
 }
 
-/* Utility classes */
-.bg-white { background-color: white; }
-.bg-gray-50 { background-color: #f9fafb; }
-.bg-gray-100 { background-color: #f3f4f6; }
-.bg-gray-900 { background-color: #111827; }
-.bg-blue-50 { background-color: #eff6ff; }
-.bg-blue-600 { background-color: #2563eb; }
-.bg-blue-900 { background-color: #1e3a8a; }
+:root {
+  --brand-blue: #5271ff;
+  --brand-red: #ff3131;
+  --brand-yellow: #ebc74f;
+}
 
-.text-white { color: white; }
-.text-gray-600 { color: #4b5563; }
-.text-gray-700 { color: #374151; }
-.text-gray-900 { color: #111827; }
-.text-blue-600 { color: #2563eb; }
-.text-blue-900 { color: #1e3a8a; }
+
+/* Utility classes */
+.bg-blue { background-color: var(--brand-blue);}
+.bg-red { background-color: var(--brand-red); }
+.bg-yellow { background-color: var(--brand-yellow); }
+
+.text-blue {
+  color: var(--brand-blue);
+}
+
+.text-red {
+  color: var(--brand-red);
+}
+
+.text-yellow {
+  color: var(--brand-yellow);
+}
 
 .rounded-lg { border-radius: 0.5rem; }
 .shadow-sm { box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); }
