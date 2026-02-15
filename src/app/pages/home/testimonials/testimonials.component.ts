@@ -20,9 +20,9 @@ export class HomeTestimonialsComponent {
       text: [
         '“I LOVE the teachers at Woodhome! My son cries when he can’t go to school for some reason – I am so grateful they’ve started him out with a love of attending school.”'
       ],
-      gradientClass: 'blue-card',
-      iconClass: 'icon-blue',
-      avatarClass: 'avatar-blue'
+      gradientClass: 'yellow-card',
+      iconClass: 'icon-yellow',
+      avatarClass: 'avatar-yellow'
     },
     {
       initials: 'TC',
@@ -31,9 +31,9 @@ export class HomeTestimonialsComponent {
       text: [
         '“Both of my boys started going to Woodhome this summer for camp/daycare and they loved it! My oldest moved on to kindergarten but my youngest is in the pre k 2 program and loves it and the ladies that work here are FANTASTIC!! Would recommend this daycare to anyone.”'
       ],
-      gradientClass: 'yellow-card',
-      iconClass: 'icon-yellow',
-      avatarClass: 'avatar-yellow'
+      gradientClass: 'red-card',
+      iconClass: 'icon-red',
+      avatarClass: 'avatar-red'
     },
     {
       initials: 'KS',
@@ -42,9 +42,9 @@ export class HomeTestimonialsComponent {
       text: [
         '“Love the staff and love that my daughter runs out to me with a smile on her face each time. They keep the kids happy and she loves to learn.”'
       ],
-      gradientClass: 'green-card',
-      iconClass: 'icon-green',
-      avatarClass: 'avatar-green'
+      gradientClass: 'blue-card',
+      iconClass: 'icon-blue',
+      avatarClass: 'avatar-blue'
     }
   ];
 

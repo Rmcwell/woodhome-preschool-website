@@ -21,7 +21,7 @@
 
 .section-subtitle {
   font-size: 1.25rem;
-  color: #4b5563;
+  color: #111827;
   margin-top: 40px;
   text-align: center;
 }
@@ -138,18 +138,22 @@
 
 .program-subtitle {
   margin-bottom: 20px;
-  color: #2563eb;
+  color: var(--brand-yellow);
 }
 
 .program-underline {
   width: 4rem;
   height: 0.25rem;
-  background-color: #2563eb;
+  background-color: var(--brand-blue);
   margin-bottom: 1.5rem;
 }
 
 .program-time {
   margin-bottom: .5rem;
+}
+
+.program-bold {
+  color: var(--brand-red);
 }
 
 .program-description,
@@ -190,9 +194,9 @@
   object-fit: cover;
 }
 
-/* Enrollment CTA */
+/* Call to Action Section */
 .enrollment-cta {
-  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+  background-color: var(--brand-yellow);
   padding: 3rem 0;
 }
 
@@ -203,7 +207,7 @@
 .cta-title {
   font-size: 1.875rem;
   font-weight: 700;
-  color: rgb(0, 0, 0);
+  color: #000;
   margin: 0 0 1rem 0;
 }
 
@@ -214,31 +218,49 @@
   max-width: 48rem;
 }
 
+.cta-button-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
 .cta-button {
   display: inline-flex;
   align-items: center;
-  color: #2563eb;
-  font-weight: 500;
-  background-color: white;
-  padding: 12px 28px;
-  font-size: 1.05rem;
-  border-radius: 9999px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+  background-color: var(--brand-blue);
+  padding: 8px 26px;
+  font-size: 1.25rem;
+  border-radius: 24px;
   border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
   text-decoration: none;
+  user-select: none;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
 }
 
 .cta-button:hover {
-  color: #1e40af;
-  box-shadow: 0 6px 10px -1px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-.cta-arrow {
-  height: 20px;
-  width: 20px;
-  margin-left: 4px;
+@media (min-width: 600px) {
+  .cta-button-content {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .cta-button {
+    width: auto;
+  }
 }
 
 /* Responsive Typography */

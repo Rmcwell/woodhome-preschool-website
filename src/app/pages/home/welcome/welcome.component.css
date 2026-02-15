@@ -1,7 +1,6 @@
 .welcome-section {
   background: linear-gradient(to bottom, white, #eff6ff);
   padding: 64px 16px;
-  position: relative;
 }
 
 .container {
@@ -22,56 +21,10 @@
   }
 }
 
-.header {
-  text-align: center;
-  margin-bottom: 48px;
-}
-
-.icon-wrapper {
-  display: inline-block;
-  margin-bottom: 16px;
-}
-
-.main-icon {
-  height: 64px;
-  width: 64px;
-  margin: 0 auto;
-}
-
-.title {
-  font-size: 30px;
-  font-weight: bold;
-  color: #111827;
-  margin: 0 0 16px 0;
-}
-
-@media (min-width: 640px) {
-  .title {
-    font-size: 36px;
-  }
-}
-
-.divider {
-  width: 96px;
-  height: 8px;
-  background-color: #fbbf24;
-  margin: 16px auto;
-  border-radius: 9999px;
-}
-
-.subtitle {
-  font-size: 20px;
-  color: #4b5563;
-  max-width: 768px;
-  margin: 0 auto;
-  line-height: 1.5;
-}
-
 .features-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 32px;
-  margin-top: 48px;
 }
 
 @media (min-width: 768px) {
@@ -84,9 +37,7 @@
   border-radius: 16px;
   padding: 32px;
   text-align: center;
-  border: 2px solid;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  transform: scale(1);
   transition: transform 0.2s ease-in-out;
 }
 
@@ -95,18 +46,15 @@
 }
 
 .feature-card.blue {
-  background-color: #c9e0ff;
-  border-color: #b6d6ff;
+  background-color: color-mix(in srgb, var(--brand-blue) 15%, white);
 }
 
 .feature-card.yellow {
-  background-color: #fffbeb;
-  border-color: #fef3c7;
+  background-color: color-mix(in srgb, var(--brand-yellow) 15%, white);
 }
 
-.feature-card.green {
-  background-color: #f0fdf4;
-  border-color: #dcfce7;
+.feature-card.red {
+  background-color: color-mix(in srgb, var(--brand-red) 15%, white);
 }
 
 .feature-icon {
@@ -121,21 +69,29 @@
 }
 
 .feature-icon.blue-gradient {
-  background: linear-gradient(to right, #60a5fa, #3b82f6);
+  background: var(--brand-blue);
 }
 
 .feature-icon.yellow-gradient {
-  background: linear-gradient(to right, #facc15, #eab308);
+  background: var(--brand-yellow);
 }
 
-.feature-icon.green-gradient {
-  background: linear-gradient(to right, #4ade80, #22c55e);
+.feature-icon.red-gradient {
+  background: var(--brand-red);
+}
+
+.feature-icon lucide-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .icon {
   height: 32px;
   width: 32px;
   color: white;
+  fill: white;
+  stroke: white;
 }
 
 .feature-title {
@@ -145,15 +101,15 @@
 }
 
 .feature-card.blue .feature-title {
-  color: #2563eb;
+  color: var(--brand-blue);
 }
 
 .feature-card.yellow .feature-title {
-  color: #d97706;
+  color: var(--brand-yellow);
 }
 
-.feature-card.green .feature-title {
-  color: #16a34a;
+.feature-card.red .feature-title {
+  color: var(--brand-red);
 }
 
 .feature-description {
@@ -171,7 +127,7 @@
   display: inline-flex;
   align-items: center;
   color: white;
-  background-color: #798CE4;
+  background-color: var(--brand-blue);
   padding: 12px 28px;
   font-size: 1.05rem;
   border-radius: 9999px;
@@ -182,8 +138,8 @@
 }
 
 .cta-button:hover {
-  color: #d4deff;
   box-shadow: 0 6px 10px -1px rgba(0, 0, 0, 0.1);
+  transform: scale(1.03);
 }
 
 .cta-arrow {

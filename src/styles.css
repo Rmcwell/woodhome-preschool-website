@@ -16,8 +16,10 @@ body {
 
 :root {
   --brand-blue: #5271ff;
+  --brand-blue-dark: #1d4ed8;
   --brand-red: #ff3131;
   --brand-yellow: #ebc74f;
+  --brand-yellow-dark: #f59e0b;
 }
 
 

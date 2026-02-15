@@ -22,12 +22,16 @@
               @if (program.times != undefined)
               {
                 <p class="program-time">
-                  <strong>Time:</strong> 
+                  <span class="program-bold">
+                    <strong>Time: </strong> 
+                  </span>
                   <span [innerHTML]="program.times"></span>
                   </p>
               }
               <p class="program-description">
-                <strong>Description: </strong>
+                <span class="progr">
+                  <strong>Description: </strong>
+                </span>
                 {{ program.description }}
               </p>
             </div>
@@ -42,23 +46,19 @@
   }
   </section>
 
-  <!-- Enrollment CTA -->
+  <!-- Call to Action -->
   <section class="enrollment-cta">
     <div class="container">
       <div class="cta-content">
-        <h2 class="cta-title">Ready to Enroll Your Child?</h2>
+        <h2 class="cta-title">Ready to Join Our Preschool Family?</h2>
         <p class="cta-subtitle">
-          Spaces fill quickly! Contact us today to schedule a tour or learn more about the enrollment process.
+          Come see the magic for yourself! We'd love to meet you and your little one.
         </p>
-        <a href="https://docs.google.com/forms/d/1XZlHI-Wj8GS3z8YVVoooeUjJksNNH8eVkV0WOF39a00/edit" class="cta-button"
-          target="_blank">
-          Enroll Now!
-          <svg class="cta-arrow" fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd"
-              d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-              clip-rule="evenodd" />
-          </svg>
-        </a>
+        <div class="cta-button-content">
+          <a href="/assets/docs/Woodhome-Preschool-Registration-Form.pdf" class="cta-button" target="_blank">
+            Enroll Now!
+          </a>
+        </div>
       </div>
     </div>
   </section>

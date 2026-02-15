@@ -1,5 +1,5 @@
 .footer {
-  background-color: #3451af;
+  background-color: var(--brand-blue);
   color: white;
 }
 
@@ -42,16 +42,18 @@
   font-size: 1.25rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  color: var(--brand-yellow);
 }
 
 .section-subtitle {
   font-size: 1.125rem;
   font-weight: 600;
   margin-bottom: 1rem;
+  color: var(--brand-yellow);
 }
 
 .description {
-  color: #bfdbfe;
+  color: white;
   margin-bottom: 1rem;
 }
 
@@ -66,7 +68,7 @@
 }
 
 .social-link:hover {
-  color: #bfdbfe;
+  color: var(--brand-red);
 }
 
 .social-icon {
@@ -96,13 +98,13 @@
 }
 
 .footer-link {
-  color: #bfdbfe;
+  color: white;
   text-decoration: none;
   transition: color 0.2s;
 }
 
 .footer-link:hover {
-  color: white;
+  color: var(--brand-red);
   cursor: pointer;
 }
 
@@ -130,7 +132,7 @@
 }
 
 .day-text {
-  color: #bfdbfe;
+  color: white;
   margin: 0;
 }
 
@@ -151,14 +153,19 @@
 }
 
 .contact-text {
-  color: #bfdbfe;
+  color: white;
   margin: 0;
 }
 
+.contact-text:hover {
+  color: var(--brand-red);
+  cursor: pointer;
+}
+
 .footer-bottom {
-  border-top: 1px solid #2e57c9;
+  border-top: 1px solid var(--brand-yellow);
   margin-top: 2rem;
   padding-top: 2rem;
   text-align: center;
-  color: #93c5fd;
+  color: white;
 }

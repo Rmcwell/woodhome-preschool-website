@@ -1,6 +1,6 @@
 .hero-section {
   position: relative;
-  background-color: #2563eb;
+  background-color: var(--brand-blue);
   min-height: 500px;
   display: flex;
   flex-direction: column;
@@ -28,7 +28,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #1d4ed8;
+  background-color: var(--brand-blue);
   mix-blend-mode: multiply;
   opacity: 0.6;
 }
@@ -65,7 +65,7 @@
   max-width: 36rem;
   font-size: 1.25rem;
   font-weight: 500;
-  color: #dbeafe;
+  color: white;
   line-height: 1.7;
 }
 
@@ -109,7 +109,7 @@
 
 .btn-primary {
   background-color: white;
-  color: #1d4ed8;
+  color: var(--brand-blue);
 }
 
 .btn-primary:hover {
@@ -117,7 +117,7 @@
 }
 
 .btn-secondary {
-  background-color: #3b82f6;
+  background-color: var(--brand-blue);
   color: white;
 }
 

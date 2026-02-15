@@ -39,7 +39,7 @@
 }
 
 .bullet-points a:hover {
-    color: #1d4ed8;
+    color: var(--brand-red);
     text-decoration: underline;
 }
 

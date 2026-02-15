@@ -9,7 +9,10 @@ import {
   BookOpen,
   MessageCircle,
   Star,
-  CalendarClock
+  CalendarClock,
+  Sprout,
+  Rocket,
+  Facebook
 } from 'lucide-angular';
 
 @NgModule({
@@ -23,7 +26,10 @@ import {
       BookOpen,
       MessageCircle,
       Star,
-      CalendarClock
+      CalendarClock,
+      Sprout,
+      Rocket,
+      Facebook
     })
   ],
   exports: [LucideAngularModule]
