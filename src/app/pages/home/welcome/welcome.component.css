@@ -123,7 +123,21 @@
   margin-top: 48px;
 }
 
-.cta-button {
+.cta-button-learn {
+  display: inline-flex;
+  align-items: center;
+  color: white;
+  background-color: var(--brand-yellow);
+  padding: 12px 28px;
+  font-size: 1.05rem;
+  border-radius: 9999px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.cta-button-programs {
   display: inline-flex;
   align-items: center;
   color: white;
@@ -135,9 +149,15 @@
   border: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  margin-right: 12px;
 }
 
-.cta-button:hover {
+.cta-button-learn:hover {
+  box-shadow: 0 6px 10px -1px rgba(0, 0, 0, 0.1);
+  transform: scale(1.03);
+}
+  
+.cta-button-programs:hover {
   box-shadow: 0 6px 10px -1px rgba(0, 0, 0, 0.1);
   transform: scale(1.03);
 }

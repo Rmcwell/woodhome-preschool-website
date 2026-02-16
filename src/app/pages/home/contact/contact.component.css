@@ -1,41 +1,37 @@
 .contact-section {
-  background: linear-gradient(to bottom, white, #ebf8ff);
-  padding: 64px 16px;
+  background: linear-gradient(to bottom, white, #eff6ff);
+  padding: 4rem 1rem;
+  position: relative;
+  overflow: hidden;
 }
 
 .container {
-  max-width: 80rem;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 0 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
-/* Section Header */
-.section-header {
+.text-center {
   text-align: center;
   margin-bottom: 3rem;
 }
 
-.section-title {
-  font-size: 1.875rem;
-  font-weight: 700;
-  color: #111827;
-  margin: 0;
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1a1a1a;
 }
 
-.title-underline {
+.divider {
   width: 6rem;
-  height: 0.25rem;
-  background-color: #2563eb;
+  height: 0.5rem;
+  background-color: var(--brand-blue);
   margin: 1rem auto;
+  border-radius: 9999px;
 }
 
-.section-subtitle {
+.subtitle {
   font-size: 1.25rem;
   color: #4b5563;
-  max-width: 48rem;
+  max-width: 768px;
   margin: 0 auto;
 }

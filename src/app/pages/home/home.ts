@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { HomeHeroComponent } from './hero/hero.component';
 import { HomeTestimonialsComponent } from './testimonials/testimonials.component';
 import { HomeWelcomeComponent } from './welcome/welcome.component';
-import { HomeProgramsComponent } from './programs/programs.component';
+import { HomeAwardsComponent } from './awards/awards.component';
 import { HomeContactComponent } from './contact/contact.component';
 
 @Component({
@@ -12,7 +12,7 @@ import { HomeContactComponent } from './contact/contact.component';
     HomeHeroComponent,
     HomeTestimonialsComponent,
     HomeWelcomeComponent,
-    HomeProgramsComponent,
+    HomeAwardsComponent,
     HomeContactComponent
 ],
   templateUrl: './home.html',

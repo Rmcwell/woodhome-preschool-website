@@ -49,6 +49,8 @@
     margin-bottom: 1rem;
 }
 
+
+
 @media (min-width: 640px) {
     .payment-container {
         padding: 0 2rem;
