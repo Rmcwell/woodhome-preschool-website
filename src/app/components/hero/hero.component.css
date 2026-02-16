@@ -26,7 +26,8 @@
 .shape {
   position: absolute;
   opacity: 0.1;
-  animation: float 6s ease-in-out infinite;
+  animation: float 8s ease-in-out infinite;
+  will-change: transform;
 }
 
 .shape:nth-child(1) {
@@ -44,9 +45,9 @@
   right: 15%;
   width: 40px;
   height: 40px;
-  background: var(--brand-red);
+  background: var(--brand-yellow);
   transform: rotate(45deg);
-  animation-delay: 1s;
+  animation-delay: 1.3s;
 }
 
 .shape:nth-child(3) {
@@ -54,9 +55,9 @@
   left: 5%;
   width: 50px;
   height: 50px;
-  background: var(--brand-yellow);
+  background: var(--brand-red);
   border-radius: 50%;
-  animation-delay: 2s;
+  animation-delay: 2.6s;
 }
 
 .shape:nth-child(4) {
@@ -66,7 +67,7 @@
   height: 35px;
   background: var(--brand-red);
   transform: rotate(45deg);
-  animation-delay: 3s;
+  animation-delay: 4s;
 }
 
 .shape:nth-child(5) {
@@ -76,7 +77,7 @@
   height: 45px;
   background: var(--brand-yellow);
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  animation-delay: 4s;
+  animation-delay: 5.3s;
 }
 
 .shape:nth-child(6) {
@@ -86,7 +87,7 @@
   height: 55px;
   background: var(--brand-red);
   border-radius: 50%;
-  animation-delay: 5s;
+  animation-delay: 6.6s;
 }
 
 @keyframes float {
@@ -116,6 +117,7 @@
   width: 30px;
   height: 30px;
   opacity: 0.2;
+  will-change: transform, left, right;
 }
 
 .paper-plane svg {
@@ -126,13 +128,14 @@
 
 .plane1 {
   top: 15%;
-  animation: fly1 15s linear infinite;
+  left: -50px;
+  animation: fly1 18s linear infinite;
 }
 
 .plane2 {
   top: 70%;
-  animation: fly2 20s linear infinite;
-  animation-delay: 5s;
+  right: -50px;
+  animation: fly2 22s linear infinite;
 }
 
 @keyframes fly1 {
@@ -142,7 +145,7 @@
   }
 
   100% {
-    left: 100%;
+    left: calc(100% + 50px);
     transform: rotate(-10deg);
   }
 }
@@ -154,7 +157,7 @@
   }
 
   100% {
-    right: 100%;
+    right: calc(100% + 50px);
     transform: rotate(170deg);
   }
 }
@@ -174,7 +177,7 @@
   font-weight: 700;
   margin-bottom: 1.5rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  animation: slideInUp 1s ease-out;
+  animation: slideInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .hero-description {
@@ -182,7 +185,7 @@
   margin-bottom: 2.5rem;
   opacity: 0.9;
   line-height: 1.7;
-  animation: slideInUp 1s ease-out 0.6s both;
+  animation: slideInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both;
 }
 
 @keyframes bounce {

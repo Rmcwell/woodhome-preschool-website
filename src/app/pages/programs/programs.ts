@@ -40,7 +40,7 @@ export class ProgramsPage {
       subtitle: "Purposeful Play and Learning",
       times: "Monday, Wednesday, and Friday from 9am-12pm",
       description: "The perfect balance between fun and learning. It offers a clear pathway to academic growth and exploration through the basic preschool fundamentals such as shapes, letter and number recognition and gross and fine motor development.",
-      image: "https://images.unsplash.com/photo-1564429238817-393bd4286b2d?q=80&w=1074&auto=format&fit=crop",
+      image: "/assets/images/3sClass.jpg",
       reverse: true
     },
     {

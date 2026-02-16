@@ -270,6 +270,64 @@
   opacity: 0.7;
 }
 
+/* Awards Section */
+.awards-section {
+  background: white;
+  padding: 4rem 1rem;
+}
+
+.awards-section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #111827;
+}
+
+.awards-divider {
+  width: 6rem;
+  height: 0.5rem;
+  background-color: var(--brand-yellow);
+  margin: 1rem auto;
+  border-radius: 9999px;
+}
+
+.awards-section-subtitle {
+  font-size: 1.25rem;
+  color: #4b5563;
+  margin-bottom: 3rem;
+}
+
+.award-showcase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.award-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  background: #f8fafc;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.award-image-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.award-image {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
 /* Call to Action Section */
 .enrollment-cta {
   background-color: var(--brand-yellow);
@@ -356,6 +414,14 @@
   .container {
     padding: 0 15px;
   }
+
+  .awards-section-title {
+    font-size: 1.75rem;
+  }
+
+  .award-showcase {
+    max-width: 400px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -363,7 +429,16 @@
   .our-story-section,
   .philosophy-section,
   .team-section,
+  .awards-section,
   .enrollment-cta {
     padding: 60px 0;
+  }
+
+  .award-image-container {
+    padding: 1rem;
+  }
+
+  .award-showcase {
+    max-width: 300px;
   }
 }
