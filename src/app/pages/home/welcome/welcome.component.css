@@ -121,6 +121,18 @@
 .cta-section {
   text-align: center;
   margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+@media (min-width: 640px) {
+  .cta-section {
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+  }
 }
 
 .cta-button-learn {
@@ -135,6 +147,16 @@
   border: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  width: 100%;
+  max-width: 280px;
+  justify-content: center;
+}
+
+@media (min-width: 640px) {
+  .cta-button-learn {
+    width: auto;
+    max-width: none;
+  }
 }
 
 .cta-button-programs {
@@ -149,14 +171,25 @@
   border: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-  margin-right: 12px;
+  width: 100%;
+  max-width: 280px;
+  justify-content: center;
+  margin-right: 0;
+}
+
+@media (min-width: 640px) {
+  .cta-button-programs {
+    width: auto;
+    max-width: none;
+    margin-right: 0;
+  }
 }
 
 .cta-button-learn:hover {
   box-shadow: 0 6px 10px -1px rgba(0, 0, 0, 0.1);
   transform: scale(1.03);
 }
-  
+
 .cta-button-programs:hover {
   box-shadow: 0 6px 10px -1px rgba(0, 0, 0, 0.1);
   transform: scale(1.03);

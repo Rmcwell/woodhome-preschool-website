@@ -22,16 +22,12 @@
               @if (program.times != undefined)
               {
                 <p class="program-time">
-                  <span class="program-bold">
                     <strong>Time: </strong> 
-                  </span>
                   <span [innerHTML]="program.times"></span>
                   </p>
               }
               <p class="program-description">
-                <span class="progr">
                   <strong>Description: </strong>
-                </span>
                 {{ program.description }}
               </p>
             </div>

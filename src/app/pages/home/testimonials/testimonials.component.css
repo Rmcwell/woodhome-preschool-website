@@ -8,6 +8,19 @@
 .container {
   max-width: 1280px;
   margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 2rem;
+  }
 }
 
 .text-center {
@@ -25,9 +38,18 @@
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: bold;
   color: #1a1a1a;
+  margin: 0;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .title {
+    font-size: 2rem;
+    padding: 0;
+  }
 }
 
 .divider {
@@ -39,16 +61,39 @@
 }
 
 .subtitle {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   color: #4b5563;
   max-width: 768px;
   margin: 0 auto;
+  padding: 0 1rem;
+  line-height: 1.6;
+}
+
+@media (min-width: 640px) {
+  .subtitle {
+    font-size: 1.25rem;
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .subtitle {
+    padding: 0;
+  }
 }
 
 .card-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 2.5rem;
+  padding: 0 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .card-grid {
+    gap: 2rem;
+    padding: 0;
+  }
 }
 
 @media (min-width: 768px) {
@@ -62,12 +107,19 @@
   border-radius: 1rem;
   position: relative;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .testimonial-card {
+    margin-top: 0;
+  }
 }
 
 .quote-icon-wrapper {
   position: absolute;
   top: -1rem;
-  left: -1rem;
+  left: 1rem;
   width: 3rem;
   height: 3rem;
   border-radius: 9999px;
@@ -75,6 +127,12 @@
   align-items: center;
   justify-content: center;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 640px) {
+  .quote-icon-wrapper {
+    left: -1rem;
+  }
 }
 
 .quote-icon {
@@ -109,6 +167,15 @@
   font-style: italic;
   color: #4b5563;
   margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.testimonial-text p {
+  margin: 0 0 0.75rem 0;
+}
+
+.testimonial-text p:last-child {
+  margin-bottom: 0;
 }
 
 .author {
@@ -125,6 +192,7 @@
   justify-content: center;
   font-weight: bold;
   color: white;
+  flex-shrink: 0;
 }
 
 .author-info {
@@ -134,11 +202,13 @@
 .name {
   color: #1a1a1a;
   font-weight: 500;
+  margin: 0;
 }
 
 .role {
   font-size: 0.875rem;
   color: #6b7280;
+  margin: 0;
 }
 
 /* Custom card color classes */
