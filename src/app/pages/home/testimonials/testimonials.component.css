@@ -28,15 +28,6 @@
   margin-bottom: 3rem;
 }
 
-.icon-wrapper {
-  margin-bottom: 1rem;
-}
-
-.main-icon {
-  width: 4rem;
-  height: 4rem;
-}
-
 .title {
   font-size: 1.75rem;
   font-weight: bold;
@@ -82,38 +73,106 @@
   }
 }
 
-.card-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2.5rem;
-  padding: 0 0.5rem;
+/* ── Carousel ── */
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-@media (min-width: 640px) {
-  .card-grid {
-    gap: 2rem;
-    padding: 0;
+.carousel-viewport {
+  overflow: hidden;
+  flex: 1;
+  /* extra top padding so the floating quote badge isn't clipped */
+  padding-top: 1.5rem;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+.carousel-slide {
+  flex: 0 0 calc(100% / 4);
+    /* 100% / testimonials.length */
+    box-sizing: border-box;
+    padding: 0 0.75rem;
+}
+
+@media (max-width: 639px) {
+  .carousel-slide {
+    padding: 0 0.25rem;
   }
 }
 
-@media (min-width: 768px) {
-  .card-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+/* Arrow buttons */
+.carousel-btn {
+  flex-shrink: 0;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 9999px;
+  border: 2px solid #e5e7eb;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: background 0.2s, border-color 0.2s, box-shadow 0.2s;
+  color: #374151;
 }
 
+.carousel-btn svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.carousel-btn:hover:not(:disabled) {
+  background: var(--brand-red, #ef4444);
+  border-color: var(--brand-red, #ef4444);
+  color: white;
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+}
+
+.carousel-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+/* Dots */
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.dot {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 9999px;
+  border: none;
+  background: #d1d5db;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s, transform 0.2s, width 0.2s;
+}
+
+.dot-active {
+  background: var(--brand-red, #ef4444);
+  width: 1.5rem;
+}
+
+/* ── Card styles (unchanged from original) ── */
 .testimonial-card {
   padding: 2rem;
   border-radius: 1rem;
   position: relative;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin-top: 1.5rem;
-}
-
-@media (min-width: 640px) {
-  .testimonial-card {
-    margin-top: 0;
-  }
+  height: 100%;
+  box-sizing: border-box;
 }
 
 .quote-icon-wrapper {
@@ -127,12 +186,6 @@
   align-items: center;
   justify-content: center;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-}
-
-@media (min-width: 640px) {
-  .quote-icon-wrapper {
-    left: -1rem;
-  }
 }
 
 .quote-icon {
@@ -154,15 +207,6 @@
   fill: #facc15;
 }
 
-.quote-bg {
-  position: absolute;
-  width: 2rem;
-  height: 2rem;
-  opacity: 0.2;
-  top: -0.5rem;
-  left: -0.5rem;
-}
-
 .testimonial-text {
   font-style: italic;
   color: #4b5563;
@@ -171,7 +215,7 @@
 }
 
 .testimonial-text p {
-  margin: 0 0 0.75rem 0;
+  margin: 0 0 0.75rem;
 }
 
 .testimonial-text p:last-child {
@@ -211,7 +255,6 @@
   margin: 0;
 }
 
-/* Custom card color classes */
 .blue-card {
   background: linear-gradient(to bottom right, #e6f1ff, #c9e0ff);
 }
