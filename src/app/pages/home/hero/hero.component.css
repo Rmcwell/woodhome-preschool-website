@@ -1,7 +1,7 @@
 .hero-section {
   position: relative;
   background-color: var(--brand-blue);
-  min-height: 500px;
+  min-height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -57,6 +57,7 @@
   .hero-section {
     justify-content: flex-end;
     align-items: flex-start;
+    min-height: 500px;
   }
 }
 

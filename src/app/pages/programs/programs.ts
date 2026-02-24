@@ -32,7 +32,7 @@ export class ProgramsPage {
       subtitle: "Discovering their World",
       times: "Tuesdays and Thursdays from 9am-12pm",
       description: "Our 2s Preschool Program, Discovering Their World, is designed to gently introduce children to the preschool community while honoring this important stage of early development. In this classroom, children learn what it means to be part of both a school community and a classroom community as they begin building independence, confidence, and social awareness. Through rich sensory exploration, purposeful play, and hands-on experiences, children strengthen fine and gross motor skills while expanding their language and communication abilities. Teachers thoughtfully guide children as they practice sharing space, expressing needs, and engaging with peers.",
-      image: "https://images.unsplash.com/photo-1453749024858-4bca89bd9edc?q=80&w=1120&auto=format&fit=crop",
+      image: "/assets/images/2sClass.jpg",
       reverse: false
     },
     {
@@ -48,20 +48,20 @@ export class ProgramsPage {
       subtitle: "Kindergarten Readiness",
       times: "Monday-Friday from 9am-12pm",
       description: "Our 4s Preschool Program, Kindergarten Readiness, provides a clear and confident pathway to kindergarten. This program builds on foundational preschool skills through deeper exploration of early academic concepts. Children engage in expanded letter work that goes beyond recognition to include early phonemic awareness, helping them begin applying these skills in meaningful ways. Early math concepts are strengthened through number sense, patterns, and problem-solving activities, while science exploration encourages curiosity, observation, and critical thinking.  Through intentional instruction and purposeful play, students develop the skills needed for a smooth and successful transition into kindergarten.",
-      image: "https://images.unsplash.com/photo-1587654780291-39c9404d746b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      image: "/assets/images/4sClass.jpeg",
       reverse: false
     },
     {
       title: "Extended Care Options",
       times: "Monday - Friday, flexible options from open-9am and 12pm-close of business",
       description: "Our extended care options provide care for children who need support beyond regular school hours in a safe and engagement environment. Before care offers a calm and welcoming start to the day. Children ease into the morning with quiet activities and time to connect with their peers before transitioning smoothly into their classroom routines. Afternoon care includes lunchtime, meaningful learning experiences, and a designated quiet time to recharge.The afternoon flows at a comfortable pace, balancing structured engagement with relaxed social interaction and allows for a smooth, flexible transition to dismissal. ",
-      image: "https://images.unsplash.com/photo-1554721299-e0b8aa7666ce?q=80&w=1170&auto=format&fit=crop",
+      image: "/assets/images/ExtendedCare.jpg",
       reverse: true
     },
     {
       title: "Summer Program",
       description: "Our summer program offers a fun, flexible experience built around a different theme each week, keeping children engaged and excited all summer long. We encourage families to inquire directly for the most up-to-date information and details about current offerings.",
-      image: "https://images.unsplash.com/photo-1578349035260-9f3d4042f1f7?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      image: "/assets/images/SummerClass.jpg",
       reverse: false
     }
   ];
