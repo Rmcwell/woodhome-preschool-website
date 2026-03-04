@@ -1,5 +1,5 @@
-import { Component, HostListener, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, HostListener, OnInit, Inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser, CommonModule } from '@angular/common';
 import { LucideIconsModule } from '../../../lucide.module';
 
 @Component({
@@ -54,6 +54,8 @@ export class HomeTestimonialsComponent implements OnInit {
     }
   ];
 
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+
   ngOnInit() {
     this.updateVisibleCount();
   }
@@ -67,6 +69,7 @@ export class HomeTestimonialsComponent implements OnInit {
   }
 
   updateVisibleCount() {
+    if (!isPlatformBrowser(this.platformId)) return;
     const w = window.innerWidth;
     if (w < 640) {
       this.visibleCount = 1;
